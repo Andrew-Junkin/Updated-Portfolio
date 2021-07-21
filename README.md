@@ -1,6 +1,6 @@
 # Updated-Portfolio
 
 ## Check out the web page here:
-https://andrew-junkin.github.io/Updated-portfolio/
+https://andrew-junkin.github.io/Updated-Portfolio/
 
 
