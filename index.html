@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/tabs.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/cards.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Andrew Junkin Portfolio</title>
+</head>
+
+<body>
+
+    <!-- Code for the various tabs -->
+    <section class="et-hero-tabs" id="land">
+        <h1 id="land-name">Andrew Junkin</h1>
+        <h3 id="land-text">Full Stack Web Developer</h3>
+        <div class="et-hero-tabs-container">
+            <a class="et-hero-tab" href="#land">Home</a>
+            <a class="et-hero-tab" href="#tab-es6">About Me</a>
+            <a class="et-hero-tab" href="#tab-skills">Skills</a>
+            <a class="et-hero-tab" href="#tab-flexbox">Portfolio</a>
+            <a class="et-hero-tab" href="#tab-react">Contact</a>
+            <span class="et-hero-tab-slider"></span>
+        </div>
+    </section>
+
+    <!-- Main content -->
+    <main class="et-main">
+        <section class="et-slide" id="tab-es6">
+            <h1>About Me</h1>
+            <h3>
+                <!-- Card that holds about me text -->
+                <div class="container">
+                    <div class="card buffer-top">
+                        <div class="card-body">
+                            Hello, my name is Andrew Junkin and I am a Full Stack Web Developer. 
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </h3>
+        </section>
+
+        <div class="page-divider"></div>
+
+        <section class="et-slide" id="tab-skills">
+            <h1>Skills</h1>
+            <h3>
+                <!-- Card that holds about me text -->
+                <div class="container">
+                    <div class="card buffer-top">
+                        <div class="card-body" id="skills-tab">
+                            <div class="tab">
+                                <button class="tablinks" onclick="openSkill(event, 'HTML')"
+                                    id="defaultOpen">HTML</button>
+                                <button class="tablinks" onclick="openSkill(event, 'CSS')">CSS</button>
+                                <button class="tablinks" onclick="openSkill(event, 'Javascript')">Javascript</button>
+                                <button class="tablinks" onclick="openSkill(event, 'Node')">Node</button>
+                                <button class="tablinks" onclick="openSkill(event, 'Express')">Express</button>
+                                <button class="tablinks" onclick="openSkill(event, 'database')">MySQL/MongoDB</button>
+                                <button class="tablinks" onclick="openSkill(event, 'React')">React</button>
+                            </div>
+
+                            <!-- Tab content -->
+                            <div id="HTML" class="tabcontent">
+                                <p></p>
+                            </div>
+
+                            <div id="CSS" class="tabcontent">
+                                <p></p>
+                            </div>
+
+                            <div id="Javascript" class="tabcontent">
+                                <p></p>
+                            </div>
+
+                            <div id="Node" class="tabcontent">
+                                <p></p>
+                            </div>
+
+                            <div id="Express" class="tabcontent">
+                                <p></p>
+                            </div>
+
+                            <div id="database" class="tabcontent">
+                                <p></p>
+                            </div>
+
+                            <div id="React" class="tabcontent">
+                                <p></p>
+                            </div>
+
+                        </div>
+                    </div>
+            </h3>
+        </section>
+
+        <div class="page-divider"></div>
+
+       
+
+        <div class="page-divider"></div>
+
+        <!-- Section for the email form -->
+        <section class="et-slide" id="tab-react">
+            <h1>Contact</h1>
+            <h3>
+                <form id="contact">
+                    <input name="name" type="text" class="feedback-input" placeholder="Name" />
+                    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                    <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                    <input type="submit" class="buffer-bottom" id="submit" value="SUBMIT" />
+
+                    <p>Phone: <br /> 919-901-6118</p> <br />
+                    <p>Email: adjunkin@gmail.com</p>
+
+                    <a href="/assets/images/TFResume.pdf" class="btn btn-primary btn-light buffer-top">Check out my
+                        Resume</a> <br />
+
+                    <a href="https://github.com/Andrew-Junkin" class="fa fa-github fa-3x buffer-top"></a>
+                    
+                </form>
+            </h3>
+
+        </section>
+
+    </main>
+
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
